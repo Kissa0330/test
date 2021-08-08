@@ -4,9 +4,9 @@ void	ver_side(int x, int y);
 void	ver_side0(int y);
 int		g_i = 0;
 int		g_j = 0;
-char	g_w1 = '/';
-char	g_w2 = '*';
-char	g_w3 = '\\';
+char	g_w1 = 'A';
+char	g_w2 = 'B';
+char	g_w3 = 'C';
 char	g_w4 = ' ';
 char	g_w5 = '\n';
 
@@ -25,11 +25,11 @@ int	rush(int x, int y)
 		ver_side(x, y);
 	if (y > 1)
 	{
-		ft_putchar(g_w3);
+		ft_putchar(g_w1);
 		hor_side(x);
 	}
 	if (x > 1 && y > 1)
-		ft_putchar(g_w1);
+		ft_putchar(g_w3);
 	return (0);
 }
 

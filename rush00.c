@@ -24,9 +24,12 @@ int	rush(int x, int y)
 		ver_side0(y);
 	else
 		ver_side(x, y);
-	ft_putchar(g_w3);
-	hor_side(x);
-	if (x > 1)
+	if (y > 1)
+	{
+		ft_putchar(g_w3);
+		hor_side(x);
+	}
+	if (x > 1 && y > 1)
 		ft_putchar(g_w1);
 	return (0);
 }
