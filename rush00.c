@@ -11,7 +11,7 @@ char	g_w4 = ' ';
 char	g_w5 = '\n';
 char	g_w6 = '|';
 
-int rush(int x, int y)
+int	rush(int x, int y)
 {
 	if (x < 1 || y < 1)
 	{
@@ -41,7 +41,7 @@ int rush(int x, int y)
 	return (0);
 }
 
-void hor_side(int x)
+void	hor_side(int x)
 {
 	g_i = 2;
 	while (g_i < x)
@@ -51,7 +51,7 @@ void hor_side(int x)
 	}
 }
 
-void ver_side(int x, int y)
+void	ver_side(int x, int y)
 {
 	g_i = 2;
 	while (g_i < y)
@@ -69,7 +69,7 @@ void ver_side(int x, int y)
 	}
 }
 
-void ver_side0(int y)
+void	ver_side0(int y)
 {
 	g_i = 2;
 	while (g_i < y)
