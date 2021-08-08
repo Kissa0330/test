@@ -1,15 +1,15 @@
-void ft_putchar(char w);
-void hor_side(int x);
-void ver_side(int x, int y);
-void ver_side0(int y);
-int g_i = 0;
-int g_j = 0;
-char g_w1 = 'o';
-char g_w2 = '-';
-char g_w3 = 'o';
-char g_w4 = ' ';
-char g_w5 = '\n';
-char g_w6 = '|';
+void	ft_putchar(char w);
+void	hor_side(int x);
+void	ver_side(int x, int y);
+void	ver_side0(int y);
+int		g_i = 0;
+int		g_j = 0;
+char	g_w1 = 'o';
+char	g_w2 = '-';
+char	g_w3 = 'o';
+char	g_w4 = ' ';
+char	g_w5 = '\n';
+char	g_w6 = '|';
 
 int rush(int x, int y)
 {
