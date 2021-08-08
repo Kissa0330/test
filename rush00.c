@@ -13,18 +13,18 @@ char g_w6 = '|';
 
 int rush(int x, int y)
 {
-	if ( x < 1 || y < 1 )
+	if (x < 1 || y < 1)
 	{
 		return (0);
 	}
 	ft_putchar(g_w1);
 	hor_side(x);
-	if (x>1)
+	if (x > 1)
 	{
 		ft_putchar(g_w3);
 	}
 	ft_putchar(g_w5);
-	if (x==1)
+	if (x == 1)
 	{
 		ver_side0(y);
 	}
@@ -69,7 +69,7 @@ void ver_side(int x, int y)
 	}
 }
 
-void ver_side0 (int y)
+void ver_side0(int y)
 {
 	g_i = 2;
 	while (g_i < y)
