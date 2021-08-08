@@ -46,14 +46,14 @@ void	ver_side(int x, int y)
 	while (g_i < y)
 	{
 		g_i++;
-		ft_putchar(g_w6);
+		ft_putchar(g_w2);
 		g_j = 2;
 		while (g_j < x)
 		{
 			g_j++;
 			ft_putchar(g_w4);
 		}
-		ft_putchar(g_w6);
+		ft_putchar(g_w2);
 		ft_putchar(g_w5);
 	}
 }
@@ -64,7 +64,7 @@ void	ver_side0(int y)
 	while (g_i < y)
 	{
 		g_i++;
-		ft_putchar(g_w6);
+		ft_putchar(g_w2);
 		ft_putchar(g_w5);
 	}
 }
