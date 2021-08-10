@@ -12,13 +12,19 @@ char	g_w5 = '\n';
 
 int	rush(int x, int y)
 {
+	// 何も描写しない時
 	if (x < 1 || y < 1)
 		return (0);
+
+	// 上辺の描写
 	ft_putchar(g_w1);
 	hor_side(x);
 	if (x > 1)
 		ft_putchar(g_w3);
 	ft_putchar(g_w5);
+
+
+	// 縦長の時
 	if (x == 1)
 		ver_side0(y);
 	else
@@ -33,6 +39,7 @@ int	rush(int x, int y)
 	return (0);
 }
 
+// 横の辺
 void	hor_side(int x)
 {
 	g_i = 2;
@@ -43,8 +50,10 @@ void	hor_side(int x)
 	}
 }
 
+// 縦の辺
 void	ver_side(int x, int y)
 {
+	// AとCの部分を引くためにg_iは2
 	g_i = 2;
 	while (g_i < y)
 	{
@@ -53,6 +62,7 @@ void	ver_side(int x, int y)
 		g_j = 2;
 		while (g_j < x)
 		{
+			// 空白の描写
 			g_j++;
 			ft_putchar(g_w4);
 		}
@@ -61,6 +71,7 @@ void	ver_side(int x, int y)
 	}
 }
 
+// x=1の描写
 void	ver_side0(int y)
 {
 	g_i = 2;
